@@ -1,4 +1,4 @@
-
+import java.util.*;
 import java.util.Scanner;
 
 public class Fraction {
@@ -108,5 +108,15 @@ public class Fraction {
         fraction_temp.numerator = fraction_a.denominator;
         fraction_temp.denominator = fraction_a.numerator;
         return this.multiplyFractions(fraction_temp);
+    }
+}
+
+
+class Main
+{
+    public static void main(String[] args)
+    {
+        Fraction fraction_a = new Fraction(1,3);
+        System.out.println(fraction_a.getNumerator()+"/"+fraction_a.getDenominator());
     }
 }
